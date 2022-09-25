@@ -1,3 +1,4 @@
+// Takes in 2 values to determine if they match, and console logs if they match or if they don't
 const assertEqual = function(actual, expected) {
   if (actual === expected) {
     console.log(`✅ Assertion Passed: ${actual} === ${expected}`);
@@ -6,6 +7,7 @@ const assertEqual = function(actual, expected) {
   }
 };
 
+// Takes in 2 arrays and returns true if they match or false if they don't
 const eqArrays = function(arr1, arr2) {
   for (let i in arr1) {
     if (arr1[i] !== arr2[i]) {
@@ -15,4 +17,6 @@ const eqArrays = function(arr1, arr2) {
   return true;
 };
 
-assertEqual(eqArrays([1, 2, 3], [1, 24, 3]), true);
+// Test Code
+assertEqual(eqArrays([1, 2, 3], [1, 2, 3]), true); // True
+assertEqual(eqArrays([1, 2, 3], [1, 4, 3]), true); // False
