@@ -29,7 +29,7 @@ const takeUntil = function(array, callback) {
     }
   }
   return results;
-}
+};
 
 
 // Test Code
