@@ -1,4 +1,4 @@
-// Reclusively checks if both arrays and returns true if they match or false if they don't
+// Reclusively checks both arrays and returns true if they match or false if they don't.
 const eqArrays = function(arr1, arr2) {
   if (!(Array.isArray(arr1))) return arr1 === arr2;
   if (arr1.length !== arr2.length) return false;
