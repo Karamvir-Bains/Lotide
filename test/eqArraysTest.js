@@ -1,7 +1,7 @@
 const { assert } = require('chai');
 const eqArrays = require('../eqArrays');
 
-describe("#eqObjects", () => {
+describe("#eqArrays", () => {
   it("returns true for a === b", () => {
     let a = [[2, 3], [4]];
     let b = [[2, 3], [4]];
